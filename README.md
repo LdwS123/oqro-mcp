@@ -68,6 +68,11 @@ SEC EDGAR (Forms 4, 5, 144, 13F, 8-K, Schedules 13D and 13G), House and Senate p
 
 Filings can arrive late (the trade date can be weeks before the filing date; both are shown). Senate paper filings are read by OCR and can be incomplete. Coverage and freshness per source are on <https://oqro.io/status>.
 
+## More
+
+- OQRO overview, REST API guide and social networks: <https://github.com/LdwS123/oqro-io>
+- X [@oqrofinance](https://x.com/oqrofinance), [LinkedIn](https://www.linkedin.com/company/oqro/), [Instagram](https://www.instagram.com/oqro.io/)
+
 ## License
 
 The files in this repository are MIT licensed. The OQRO service and its data are covered by <https://oqro.io/terms>.
