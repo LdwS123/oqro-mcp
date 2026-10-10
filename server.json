@@ -1,0 +1,9 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.LdwS123/oqro",
+  "description": "Insider, Congress, 13F and federal contract filings for US stocks, each linked to its source.",
+  "repository": { "url": "https://github.com/LdwS123/oqro-mcp", "source": "github" },
+  "version": "1.0.0",
+  "websiteUrl": "https://oqro.io/mcp",
+  "remotes": [{ "type": "streamable-http", "url": "https://oqro.io/api/mcp" }]
+}
