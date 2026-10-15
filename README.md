@@ -27,7 +27,7 @@ claude mcp add --transport http oqro https://oqro.io/api/mcp
 
 **Claude, ChatGPT and other clients:** add a remote MCP server (custom connector) with the URL above, then sign in when asked. Step-by-step screens are on <https://oqro.io/mcp>.
 
-## Tools (15)
+## Tools (21)
 
 | Tool | What it does |
 |---|---|
@@ -46,6 +46,12 @@ claude mcp add --transport http oqro https://oqro.io/api/mcp
 | `price_history` | Daily, weekly or monthly closes next to the S&P 500, with drawdown from the high. |
 | `screen` | Filter and sort about 850 covered companies on published numbers. |
 | `leaderboard` | Members of Congress or insiders ranked by how their disclosed purchases did against the S&P 500. |
+| `company_context` | What has been happening at one company: its weekly note written from OQRO's own facts, its Form 8-K reports with the company's own opening sentence, mergers and acquisitions it is part of, and 30 and 90 day price moves. |
+| `compare_companies` | Two covered companies side by side, with the OQRO comparison page. |
+| `insider_stats` | Insider buying statistics per year since 2006: purchases, sales, values, who bought, largest purchases, sector view. |
+| `congress_stats` | Congress stock trades per year from 2021: trades, members, reporting delay, most-traded stocks and most active members. |
+| `baskets` | Disclosure baskets (insider, Congress and fund purchases under a written rule) against the S&P 500, with every member company. |
+| `calendar` | Earnings dates, economic releases and SEC filing deadlines for the next 30 days. |
 
 ## Example questions
 
