@@ -47,6 +47,7 @@ claude mcp add --transport http oqro https://oqro.io/api/mcp
 | `screen` | Filter and sort about 850 covered companies on published numbers. |
 | `leaderboard` | Members of Congress or insiders ranked by how their disclosed purchases did against the S&P 500. |
 | `company_context` | What has been happening at one company: its weekly note written from OQRO's own facts, its Form 8-K reports with the company's own opening sentence, mergers and acquisitions it is part of, and 30 and 90 day price moves. |
+| `company_records` | Public records about one company beyond SEC filings: FDA approvals, clearances and recalls, NHTSA vehicle recalls, WARN layoff notices, federal securities cases, clinical trials and CFPB complaint counts by month, each with its date and official source. |
 | `compare_companies` | Two covered companies side by side, with the OQRO comparison page. |
 | `insider_stats` | Insider buying statistics per year since 2006: purchases, sales, values, who bought, largest purchases, sector view. |
 | `congress_stats` | Congress stock trades per year from 2021: trades, members, reporting delay, most-traded stocks and most active members. |
