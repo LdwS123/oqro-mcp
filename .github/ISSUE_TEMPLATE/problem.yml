@@ -1,0 +1,8 @@
+name: Problem with the server or the documentation
+description: A wrong answer, a connection error, or something in the README that does not match the server
+body:
+  - type: input
+    attributes: { label: Client, description: "Claude, ChatGPT, Cursor or another MCP client, with its version" }
+  - type: textarea
+    attributes: { label: What happened, description: "The tool, the question and what you expected. Leave out personal data." }
+    validations: { required: true }

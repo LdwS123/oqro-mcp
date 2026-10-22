@@ -1,0 +1,29 @@
+name: Check
+# Every Monday and on every change: the manifest is valid JSON, and the live server still asks for sign-in the way the README says.
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "17 6 * * 1"
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: server.json is valid JSON with the fields the registry needs
+        run: |
+          python3 - <<'PY'
+          import json
+          d = json.load(open("server.json"))
+          for k in ("name", "description", "version", "repository", "remotes"):
+              assert k in d, f"server.json lacks {k}"
+          assert d["remotes"][0]["url"].startswith("https://"), "the remote must be https"
+          PY
+      - name: the endpoint asks for sign-in and points at its OAuth metadata
+        run: |
+          code=$(curl -sS -o /dev/null -D headers.txt -w '%{http_code}' -X POST https://oqro.io/api/mcp -H 'content-type: application/json' -d '{"jsonrpc":"2.0","id":1,"method":"tools/list"}')
+          echo "HTTP $code"
+          test "$code" = "401"
+          grep -i '^www-authenticate:.*resource_metadata=' headers.txt

@@ -7,7 +7,7 @@ Ask Claude, ChatGPT, Cursor or any MCP client about **insider trades, Congress s
 - **Server (remote, Streamable HTTP):** `https://oqro.io/api/mcp`
 - **Website and setup page:** <https://oqro.io/mcp>
 - **Protocol:** MCP `2025-06-18`
-- **Auth:** OAuth 2.1 with PKCE and dynamic client registration (sign in with an OQRO account). The tool list is open; every tool call is checked against an active OQRO Pro subscription ($9.99 a month or $79.99 a year).
+- **Auth:** OAuth 2.1 with PKCE and dynamic client registration (sign in with an OQRO account). Every request needs the sign-in: without a token the server answers HTTP 401 and points at its OAuth metadata. The tool list is public in the server card (<https://oqro.io/.well-known/mcp>); tool calls are checked against an active OQRO Pro subscription ($9.99 a month or $79.99 a year).
 
 OQRO describes what was filed. It is not investment advice.
 
@@ -27,7 +27,7 @@ claude mcp add --transport http oqro https://oqro.io/api/mcp
 
 **Claude, ChatGPT and other clients:** add a remote MCP server (custom connector) with the URL above, then sign in when asked. Step-by-step screens are on <https://oqro.io/mcp>.
 
-## Tools (21)
+## Tools (22)
 
 | Tool | What it does |
 |---|---|
@@ -78,8 +78,12 @@ Filings can arrive late (the trade date can be weeks before the filing date; bot
 ## More
 
 - OQRO overview, REST API guide and social networks: <https://github.com/LdwS123/oqro-io>
-- X [@oqrofinance](https://x.com/oqrofinance), [LinkedIn](https://www.linkedin.com/company/oqro/), [Instagram](https://www.instagram.com/oqro.io/)
+- X [@oqrofinance](https://x.com/oqrofinance), [LinkedIn](https://www.linkedin.com/company/oqro/), [Instagram](https://www.instagram.com/oqrofinance/)
+
+## Security
+
+The server is read-only and stateless, and every request needs a signed-in account. To report a vulnerability, follow [SECURITY.md](SECURITY.md) (contact@oqro.io; also at <https://oqro.io/.well-known/security.txt>).
 
 ## License
 
-The files in this repository are MIT licensed. The OQRO service and its data are covered by <https://oqro.io/terms>.
+The files in this repository are MIT licensed ([LICENSE](LICENSE)). The OQRO service, its data and its logo are not covered by that license: see <https://oqro.io/terms>.
