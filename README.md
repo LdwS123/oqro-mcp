@@ -1,13 +1,18 @@
 <p align="center"><img src="assets/logo.png" alt="OQRO" width="96"></p>
 
-# OQRO MCP server
+# OQRO MCP server (free)
 
-Ask Claude, ChatGPT, Cursor or any MCP client about **insider trades, Congress stock trades, hedge fund 13F moves and federal contracts** for US-listed companies. Every answer comes with the official filing it was read from.
+A free, remote MCP server for **insider trades, Congress stock trades, hedge fund 13F moves, 8-K events, M&A and federal contracts** on US-listed companies. Ask Claude, ChatGPT, Cursor or any MCP client; every answer comes with the official filing it was read from.
 
+- **Price:** free. All 22 tools, no credit card, no trial that runs out. You sign in with a free OQRO account (an email address is enough).
 - **Server (remote, Streamable HTTP):** `https://oqro.io/api/mcp`
 - **Website and setup page:** <https://oqro.io/mcp>
 - **Protocol:** MCP `2025-06-18`
-- **Auth:** OAuth 2.1 with PKCE and dynamic client registration (sign in with an OQRO account). Every request needs the sign-in: without a token the server answers HTTP 401 and points at its OAuth metadata. The tool list is public in the server card (<https://oqro.io/.well-known/mcp>); tool calls are checked against an active OQRO Pro subscription ($9.99 a month or $79.99 a year).
+- **Auth:** OAuth 2.1 with PKCE and dynamic client registration. Every request needs the sign-in: without a token the server answers HTTP 401 and points at its OAuth metadata, so your client opens the OQRO sign-in by itself. The tool list is public in the server card (<https://oqro.io/.well-known/mcp>).
+- **Usage:** your tool calls per day are shown in your account, under API keys and usage.
+
+<p align="center"><a href="assets/oqro-demo.mp4"><img src="assets/oqro-demo.gif" alt="A one-minute tour of OQRO: insider trades, Congress trades, fund moves, federal contracts, M&A and Ask OQRO" width="760"></a></p>
+<p align="center"><sub>One-minute tour of the data behind the server. <a href="assets/oqro-demo.mp4">Watch it as a video (MP4)</a>.</sub></p>
 
 OQRO describes what was filed. It is not investment advice.
 
@@ -66,10 +71,13 @@ claude mcp add --transport http oqro https://oqro.io/api/mcp
 
 SEC EDGAR (Forms 4, 5, 144, 13F, 8-K, Schedules 13D and 13G), House and Senate periodic transaction reports, USAspending.gov, Lobbying Disclosure Act reports. Every record links to its source document.
 
-## Free pages (no account)
+## What is free
+
+Everything the server returns is also on the website, free and without an account: every company, insider, member of Congress and fund page with the full history, the screener, statistics and track records. A free account adds the MCP server, a REST API key, alerts, watchlists and CSV exports. The one paid option on OQRO is the AI assistant on the website (OQRO Pro); the MCP server does not need it, since your own assistant does the asking. Details: <https://oqro.io/pricing>.
 
 - Rare insider trades, this week: <https://oqro.io/rare-insider-trades>
 - Weekly recap of insider and Congress trades: <https://oqro.io/weekly>
+- Market map of the S&P 500, today: <https://oqro.io/app/market-update>
 
 ## Limits
 
