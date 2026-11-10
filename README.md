@@ -99,6 +99,7 @@ Filings can arrive late (the trade date can be weeks before the filing date; bot
 
 - OQRO overview, REST API guide and social networks: <https://github.com/LdwS123/oqro-io>
 - X [@oqrofinance](https://x.com/oqrofinance), [LinkedIn](https://www.linkedin.com/company/oqro/), [Instagram](https://www.instagram.com/oqrofinance/)
+- Built something with it, or found a gap? Post it in [Discussions](https://github.com/LdwS123/oqro-mcp/discussions). If the server is useful to you, a star on this repository helps other people find it.
 
 ## Security
 
