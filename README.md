@@ -67,6 +67,18 @@ claude mcp add --transport http oqro https://oqro.io/api/mcp
 - What did Berkshire Hathaway add to, trim or exit in its latest 13F?
 - Run a pre-mortem on Boeing: free cash flow, debt, dilution and the red-flag filings of the last 12 months.
 
+## What an answer looks like
+
+A real result from `rare_insider_trades`, for the week of November 2, 2026. Your assistant writes the sentences; the facts and links come from the tool.
+
+> **Upbound Group (UPBD).** By November 2, 5 insiders had bought shares on the open market within one week; by November 5 there were 7. No week in UPBD's filings since 2006 had that many buyers, and these were the first open-market purchases by any UPBD insider since May 2025. Among them: Jeffrey J. Brown, about $400,000 (filed November 4), and Glenn P. Marino, about $393,000, Marino's first purchase of UPBD in filings since 2006. [Filing on OQRO](https://oqro.io/e/6578a966-d7b9-5e12-8e9b-d4573b3a82ec)
+>
+> **LKQ Corporation (LKQ).** Sue Gove bought about $201,000 on November 4, Gove's first open-market purchase of LKQ in filings since 2006. 3 LKQ insiders bought that week, which happened 3 times before since 2006. 5 days later LKQ filed an 8-K about a change of a top executive or board member. [Filing on OQRO](https://oqro.io/e/1688e530-8632-5e7e-8ee6-512b4f3091db)
+>
+> **AutoZone (AZO).** A sale, for contrast: Jamere Jackson sold about $10.2 million on November 4. Jackson is named in AutoZone's 8-K of October 20, 2026, which reports his resignation as Chief Financial Officer. [Filing on OQRO](https://oqro.io/e/a335b50c-10a0-5cf6-8a3e-d998ddf47a81)
+
+Each OQRO page links on to the SEC Form 4 itself. The same list, refreshed every day, is free without an account: <https://oqro.io/rare-insider-trades> ([JSON](https://oqro.io/rare-insider-trades/data.json)).
+
 ## Sources
 
 SEC EDGAR (Forms 4, 5, 144, 13F, 8-K, Schedules 13D and 13G), House and Senate periodic transaction reports, USAspending.gov, Lobbying Disclosure Act reports. Every record links to its source document.
