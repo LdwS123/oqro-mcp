@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "oqro": {
+      "type": "http",
+      "url": "https://oqro.io/api/mcp"
+    }
+  }
+}
