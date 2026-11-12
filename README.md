@@ -79,6 +79,17 @@ A real result from `rare_insider_trades`, for the week of November 2, 2026. Your
 
 Each OQRO page links on to the SEC Form 4 itself. The same list, refreshed every day, is free without an account: <https://oqro.io/rare-insider-trades> ([JSON](https://oqro.io/rare-insider-trades/data.json)).
 
+## No install: read any page as Markdown
+
+An agent that cannot add an MCP server can still read OQRO. Every public page is also plain Markdown at its own address with `.md` at the end, free, with no account and no key:
+
+```bash
+curl https://oqro.io/stocks/AAPL.md      # one company: insider, Congress and fund filings
+curl https://oqro.io/insiders.md         # latest insider trades
+```
+
+The short guide for agents (addresses, tools, how to quote a filing) is at <https://oqro.io/agents> ([Markdown](https://oqro.io/agents.md)); the full index is <https://oqro.io/llms.txt>.
+
 ## Sources
 
 SEC EDGAR (Forms 4, 5, 144, 13F, 8-K, Schedules 13D and 13G), House and Senate periodic transaction reports, USAspending.gov, Lobbying Disclosure Act reports. Every record links to its source document.
